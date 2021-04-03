@@ -20,6 +20,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "tslint"
+            ],
             "outputPath": "dist/rushapp-admin/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -31,9 +34,13 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
+              "src/scss/_index.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/scss"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -95,7 +102,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -130,6 +136,11 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/scss"
+              ]
+            },
             "outputPath": "dist/rushapp-admin/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"

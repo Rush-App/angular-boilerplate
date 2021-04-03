@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: $light-background;
+}
+button {
+  border: none;
+  background-color: unset;
+  font: 400 15px "Open Sans", sans-serif;
+  cursor: pointer;
+  display: block;
+  text-align: left;
+  &:focus {
+    outline: none;
+  }
+}
+p {
+  font-size: 15px;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 15px;
+}
+h5 {
+  font-size: 10px;
+}
