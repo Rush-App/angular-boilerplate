@@ -1,5 +1,6 @@
 import 'zone.js/dist/zone-node';
 
+import * as cookieParser from 'cookie-parser';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import * as express from 'express';
 import { join } from 'path';
@@ -13,6 +14,8 @@ export function app(): express.Express {
   const server = express();
   const distFolder = join(process.cwd(), 'dist/rushapp-admin/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
+
+  server.use(cookieParser());
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
   server.engine('html', ngExpressEngine({
@@ -38,8 +41,7 @@ export function app(): express.Express {
 }
 
 function run(): void {
-  const port = process.env.PORT || 4000;
-
+  const port = process.env.PORT;
   // Start up the Node server
   const server = app();
   server.listen(port, () => {

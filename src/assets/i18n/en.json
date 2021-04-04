@@ -1,0 +1,13 @@
+{
+  "EMAIL_ERROR": "Please enter a valid email address",
+  "REQUIRED_ERROR": "Required field",
+  "MAX_ERROR": "Maximum allowed value - {{number}}",
+  "MAX_LENGTH": "Maximum number of characters - {{number}}",
+  "PATTERN_ERROR": "Your data is out of format",
+  "You have incorrectly entered your username or password": "You have incorrectly entered your e-mail or password",
+
+  "This website uses cookies to improve your user experience and uses": "This website uses cookies to improve your user experience and uses",
+  "Read more in the": "Read more in the",
+  "By using the site, you consent.": "By using the site, you consent.",
+  "Privacy Policy": "Privacy Policy"
+}
