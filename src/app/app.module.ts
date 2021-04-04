@@ -8,7 +8,7 @@ import {I18nModule} from '../shared/ssr-services/i18n/i18n.module';
 import {AppComponent} from './app.component';
 // SHARED_COMPONENTS
 import {CookiesPanelComponent} from '../shared-components/cookies-panel/cookies-panel.component';
-import {LanguageSwitchingComponent} from '../shared-components/navbar/language-switching/language-switching.component';
+import {LanguageSwitchingComponent} from '../shared-components/language-switching/language-switching.component';
 // SHARED_SERVICES
 import {NotificationService} from '../shared/services/notification.service';
 import {TokenInterceptor} from '../shared/interceptors/token.interceptor';
@@ -60,8 +60,6 @@ const ANGULAR_MATERIAL_MODULES = [
     BrowserAnimationsModule,
     HttpClientModule,
     I18nModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
     ...ANGULAR_MATERIAL_MODULES

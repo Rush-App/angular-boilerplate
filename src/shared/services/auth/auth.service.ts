@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {ApiService} from '../api.service';
-import {User} from '../../models/user/user.class';
+import {User} from '../../models/components/user.class';
 import {catchError} from 'rxjs/operators';
 import {Observable, throwError} from 'rxjs';
 import {Router} from '@angular/router';

@@ -1,0 +1,32 @@
+@import 'abstracts/constants';
+
+.language-switching {
+  display: flex;
+  align-items: center;
+  .lang {
+    &--active {
+      color: $light-text;
+      background-color: $primary-lighter;
+    }
+    &__icon {
+      &:hover {
+        color: $secondary-lighter;
+      }
+      color: $light-text;
+      cursor: pointer;
+      text-transform: uppercase;
+      &--sticky {
+        color: $dark-text;
+      }
+      &--no-sticky {
+        color: $light-text;
+      }
+      &--no-landing {
+        color: $dark-text;
+      }
+    }
+    &__btn-text {
+      text-transform: uppercase;
+    }
+  }
+}

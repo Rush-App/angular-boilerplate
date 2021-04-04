@@ -5,6 +5,7 @@
   "MAX_LENGTH": "Maximum number of characters - {{number}}",
   "PATTERN_ERROR": "Your data is out of format",
   "You have incorrectly entered your username or password": "You have incorrectly entered your e-mail or password",
+  "Unknown error from server": "Unknown error from server",
 
   "This website uses cookies to improve your user experience and uses": "This website uses cookies to improve your user experience and uses",
   "Read more in the": "Read more in the",

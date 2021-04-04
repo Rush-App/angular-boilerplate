@@ -62,6 +62,12 @@ export class ApiService {
         null,
         true
       );
+    } else {
+      this.notificationService.error(
+        'Unknown error from server',
+        null,
+        true
+      );
     }
 
     return throwError(response);
